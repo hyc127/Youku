@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优酷-这个世界很酷</title>
+    <script src="../../58/JQuerry.js"></script>
+    <link rel="stylesheet" href="youku.css">
+</head>
+
+<body>
+    <div class="window">
+        <!-- 头部大屏幕 -->
+
+        <head  class="h-screen">
+            <!-- 头部两会点击隐藏栏 -->
+            <div class="h-lh">
+                <!-- 链接跳转区域 -->
+                <div class="click-aria">
+                    <a href="#" class="alink"></a>
+                    <span class="close-icon"> </span>
+                </div>
+            </div>
+            <!-- 头部节目轮播区域 -->
+            <div class="h-program">
+                <!--  logo行 -->
+                <div class="g-head-container">
+                    <div class="g-box">
+                        <a href="#" class="h-logo-icon"></a>
+                        <!-- 搜索栏 -->
+                        <div class="h-search">
+                            <form action="#">
+                                <input type="text" class="h-search-input" placeholder="这！就是街舞">
+                                <a href="#" class="h-search-input-icon"></a>
+                                <button type="submit" class="h-search-btn">搜库</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- 节目图片 -->
+                <div class="h-program-image-container">
+                    <ul class="h-program-image-list">
+                        <li style="background: url(fire.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: block" title="烈火如歌银雪回来了">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(beauty_life.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none"
+                            title="美好生活小白助攻">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(f_lianghui.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none"
+                            title="全程政协主席汪洋发表讲话">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(xiaoshuo.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none" title="晓说樊建川晒战时美军机密">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(brave.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none" title="勇敢者游戏真人版吃鸡">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(library.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none" title="万能图书馆李岩变司机">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                        <li style="background: url(singer.jpeg) no-repeat;background-position: center;width: 100%;height: 100%;display: none" title="歌手2018">
+                            <a href="#" style="display: block;width: 100%;height: 100%"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 节目单 -->
+                <ol class="h-program-list">
+                    <!-- 节目 -->
+                    <li class="h-program-list-item" title="烈火如歌银雪回来了">
+                        <a href="#">
+                            <span>烈火如歌</span>
+                            <span class="list-seperator">:</span>
+                            银雪回来了
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="美好生活小白助攻">
+                        <a href="#">
+                            <span>美好生活</span>
+                            <span class="list-seperator">:</span>
+                            小白助攻
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="全程政协主席汪洋发表讲话">
+                        <a href="#">
+                            <span>全程</span>
+                            <span class="list-seperator">:</span>
+                            政协主席汪洋发表讲话
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="晓说樊建川晒战时美军机密">
+                        <a href="#">
+                            <span>晓说</span>
+                            <span class="list-seperator">:</span>
+                            樊建川晒战时美军机密
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="勇敢者游戏真人版吃鸡">
+                        <a href="#">
+                            <span>勇敢者游戏</span>
+                            <span class="list-seperator">:</span>
+                            真人版吃鸡
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="万能图书馆李岩变司机">
+                        <a href="#">
+                            <span>万能图书馆</span>
+                            <span class="list-seperator">:</span>
+                            李岩变司机
+                        </a>
+                    </li>
+                    <li class="h-program-list-item" title="歌手2018">
+                        <a href="#">
+                            <span>歌手2018</span>
+                            <span class="list-seperator">:</span>
+                            今晚22点全网首播
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </head>
+        <div class="main">
+            <!-- 主要内容区域 -->
+            <div class="main-nav-container">
+                <ul class="nav-guide">
+                    <li class="nav-group">
+                        <span class="channel">剧集</span>
+                        <span class="channel">电影</span>
+                        <span class="channel">综艺</span>
+                        <br>
+                        <span class="channel">动漫</span>
+                        <span class="channel">娱乐</span>
+                        <span class="channel">资讯</span>
+                    </li>
+                    <li class="nav-group">
+                        <span class="channel">少儿</span>
+                        <span class="channel">来疯</span>
+                        <span class="channel">音乐</span>
+                        <br>
+                        <span class="channel">搞笑</span>
+                        <span class="channel">直播</span>
+                        <span class="channel">片库</span>
+                    </li>
+                    <li class="nav-group">
+                        <span class="channel">纪实</span>
+                        <span class="channel">公益</span>
+                        <span class="channel">体育</span>
+                        <br>
+                        <span class="channel">汽车</span>
+                        <span class="channel">科技</span>
+                        <span class="channel">财经</span>
+                    </li>
+                    <li class="nav-group">
+                        <span class="channel">文化</span>
+                        <span class="channel">旅游</span>
+                        <span class="channel">时尚</span>
+                        <br>
+                        <span class="channel">亲子</span>
+                        <span class="channel">教育</span>
+                        <span class="channel">游戏</span>
+                    </li>
+                    <li class="nav-group">
+                        <span class="channel">生活</span>
+                        <br>
+                        <span class="channel">VR</span>
+                    </li>
+                    <li class="nav-group nav-group-icon">
+                        <span>
+                            <a href="#" class="pianku">优酷片库</a>
+                        </span>
+                        <span>
+                            <a href="#" class="pianku">指数排行</a>
+                        </span>
+                        <span>
+                            <a href="#" class="pianku">大鱼号精选</a>
+                        </span>
+                        <span>
+                            <a href="#" class="pianku">下载应用</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-item">
+                <h3 class="main-item-title">即时热点</h3>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="zhuxi.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3 class="main-item-title">欢乐喜剧人</h3>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju2.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju3.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju4.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju5.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+                <div class="main-item-video">
+                    <div class="controler">
+                        <div class="outer">
+                            <div class="inner img1"></div>
+                            <div class="inner img2"></div>
+                            <div class="inner img3"></div>
+                            <div class="inner img4"></div>
+                            <div class="inner img5"></div>
+                            <div class="inner img6"></div>
+                            <div class="inner img7"></div>
+                            <div class="inner img8"></div>
+                        </div>
+                        <div class="video">
+                            <img src="xiju6.jpg" alt="" class="img">
+                        </div>
+                    </div>
+
+                    <h5 class="video-sub">习近平全票当选为国家主席、中央军委主席</h5>
+                    <small class="video-cont">145万次播放</small>
+                </div>
+            </div>
+
+            <div class="main-item">
+                <div class="add">
+                    <img src="jiangren.jpg" alt="">
+                    <span class="add-icon">广告</span>
+                </div>
+            </div>
+
+            <div class="main-item">
+                <h3 class="main-item-title">
+                    剧集
+                    <span class="right-arrow"></span>
+                    <ul class="main-item-right">
+                        <li>
+                            <a href="#">最新</a>
+                        </li>
+                        <li>
+                            <a href="#">大陆剧</a>
+                        </li>
+                        <li>
+                            <a href="#">日韩剧</a>
+                        </li>
+                        <li>
+                            <a href="#">英美剧</a>
+                        </li>
+                        <li>
+                            <a href="#">港台剧</a>
+                        </li>
+                    </ul>
+                </h3>
+                <div class="two-side-container">
+                    <div class="left-side">
+                        <a href="#">
+                            <img src="meihao.jpeg" alt="美好生活！">
+                            <span class="bt-info">更新至36集</span>
+                        </a>
+                        <div class="short-title">美好生活</div>
+                        <div class="bt-subtitle">张嘉译牛莉离婚！人到中年重启人生</div>
+                    </div>
+                    <div class="right-side">
+                        <div class="right-side-upside">
+                            <ul class="right-side-container">
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="liehuo.gif">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="liehuo.gif">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="liehuo.gif">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="liehuo.gif">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-side-flowside">
+                            <ul class="right-side-container">
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="qiaomu.jpeg">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="qiaomu.jpeg">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="qiaomu.jpeg">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                                <li class="right-side-item">
+                                    <a href="#">
+                                        <img src="qiaomu.jpeg">
+                                        <span class="bt-info">更新至30集</span>
+                                    </a>
+                                    <div class="short-title">烈火如歌</div>
+                                    <div class="bt-subtitle">解气！如歌辉鞭暴渣男</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-item">
+                    <h3 class="main-item-title">
+                        超级网剧
+                        <span class="right-arrow"></span>
+                    </h3>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="baike.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="xiaoao.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="xiaoao.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="xiaoao.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="xiaoao.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                    <div class="right-side-item">
+                        <a href="#">
+                            <img src="xiaoao.jpeg" alt="">
+                            <span class="bt-info">更新至12集</span>
+                        </a>
+                        <div class="short-title">万能图书馆</div>
+                        <div class="bt-subtitle">叫兽白客撩妹大PK</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-item">
+                <div class="add">
+                    <img src="add2.jpg" alt="">
+                    <span class="add-icon">广告</span>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3 class="main-item-title">
+                    电影里的奇思妙想开脑洞
+                </h3>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="yonggan.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="xiong.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="yaomao.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="xiangshui.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="yuanli.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="mofa.jpeg" alt="">
+                    </div>
+                    <div class="short-title">勇敢者游戏：决战丛林</div>
+                    <div class="bt-subtitle">高中生穿越游戏界冒险</div>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3 class="main-item-title">关于梦想的喜剧电影</h3>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+                <div class="card">
+                    <img src="fanzhuan.jpeg" alt="">
+                    <div class="short-title">反转人生</div>
+                    <div class="bt-subtitle">夏雨开挂重撩旧爱宋茜</div>
+                </div>
+            </div>
+            <div class="main-item">
+                <h3 class="main-item-title">不一样的江湖 同样的热血</h3>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+                <div class="card">
+                    <img src="yitian.jpeg" alt="">
+                    <div class="short-title">新飞狐外传</div>
+                    <div class="bt-subtitle">楚原拍摄原版屠龙记</div>
+                </div>
+            </div>
+            <div class="main-item">
+                <div class="bt-links">
+                    <div class="yk-sy">
+                        <ul>
+                            <li>
+                                <a href="#">关于优酷事业群</a>
+                            </li>
+                            <li>
+                                <a href="#">友情链接</a>
+                            </li>
+                            <li>
+                                <a href="#">广告服务</a>
+                            </li>
+                            <li>
+                                <a href="#">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yk-rm">
+                        <ul>
+                            <li>
+                                <a href="#">优酷热门</a>
+                            </li>
+                            <li>
+                                <a href="#">剧集</a>
+                                <a href="#">电影</a>
+                                <a href="#">综艺</a>
+                                <a href="#">音乐</a>
+                                <a href="#">少儿</a>
+                                <a href="#">资讯</a>
+                                <a href="#">纪实</a>
+                                <a href="#">公益</a>
+                            </li>
+                            <li>
+                                <a href="#">体育</a>
+                                <a href="#">汽车</a>
+                                <a href="#">科技</a>
+                                <a href="#">财经</a>
+                                <a href="#">娱乐</a>
+                                <a href="#">文化</a>
+                                <a href="#">动漫</a>
+                                <a href="#">搞笑</a>
+                            </li>
+                            <li>
+                                <a href="#">旅游</a>
+                                <a href="#">时尚</a>
+                                <a href="#">亲子</a>
+                                <a href="#">教育</a>
+                                <a href="#">游戏</a>
+                                <a href="#">会员</a>
+                                <a href="#">发现</a>
+                                <a href="#">发现</a>
+                                <a href="#">片库</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yk-cp">
+                        <ul>
+                            <li>
+                                <a href="#">产品中心</a>
+                            </li>
+                            <li>
+                                <a href="#">Mac客户端</a>
+                            </li>
+                            <li>
+                                <a href="#">手机客户端</a>
+                            </li>
+                            <li>
+                                <a href="#">视频云</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yk-yh">
+                        <ul>
+                            <li>
+                                <a href="#">用户</a>
+                            </li>
+                            <li>
+                                <a href="#">开通大鱼号</a>
+                                <a href="#">鲸观</a>
+                            </li>
+                            <li>
+                                <a href="#">支持</a>
+                            </li>
+                            <li>
+                                <a href="#">繁体版</a>
+                                <a href="#">在线反馈</a>
+                            </li>
+                            <li>
+                                <a href="#">侵权支持</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- 相关法律区域 -->
+            <a href="#" class="aut-1">经营性网站<br>备案信息</a>
+            <a href="#" class="aut-2">中国互联网<br>诚信联盟</a>
+            <a href="#" class="aut-3">中国互联网<br>举报中心</a>
+            <a href="#" class="aut-4">网络举报<br>APP下载</a>
+            <a href="#" class="aut-5">京公网安备<br>11000002000017</a>
+            <a href="#" class="aut-6">网络文化<br>经营单位</a>
+            <a href="#" class="aut-7">暴恐音视频<br>举报专区</a>
+
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.close-icon').click(function () {
+                $('.window').css('top', '-70px');
+            })
+
+            function check() {
+
+            };
+
+            $('.h-program-list-item').hover(function () {
+                var title = $(this).attr('title');
+                $('.h-program-image-list li').each(function () {
+                    if ($(this).attr('title') === title) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                })
+            })
+            $('.inner').hover(function () {
+                $(this).css('background-color', 'snow').prevAll().css('background-color', 'snow');
+            }).mouseout(function () {
+                $('.inner').css('background-color', 'teal');
+            })
+            $('.img1').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '0',
+                    "top": '0'
+                })
+            })
+            $('.img2').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '-192px',
+                    "top": '0'
+                })
+            })
+            $('.img3').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '-384px',
+                    "top": '0'
+                })
+            })
+            $('.img4').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '0',
+                    "top": '-108px'
+                })
+            })
+            $('.img5').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '-192px',
+                    "top": '-108px'
+                })
+            })
+            $('.img6').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '-384px',
+                    "top": '-108px'
+                })
+            })
+            $('.img7').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '0',
+                    "top": '-216px'
+                })
+            })
+            $('.img8').hover(function () {
+                $(this).parent().siblings().children('.img').css({
+                    "left": '-192px',
+                    "top": '-216px'
+                })
+            })
+        })
+    </script>
+</body>
+</html>

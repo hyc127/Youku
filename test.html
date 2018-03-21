@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../58/JQuerry.js"></script>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            margin-right: 5px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        .border-line{
+            width: 14px;
+            height: 5px;
+            border-radius: 2px;
+            background: red;
+            margin: 0 auto;
+            opacity: 0;
+        }
+        li:hover a{
+            color: #3b9eff;
+        }
+        li:hover .border-line{
+            background: #3b9eff;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">最新</a><div class="border-line"></div></li>
+    </ul>
+
+    
+</body>
+
+</html>
